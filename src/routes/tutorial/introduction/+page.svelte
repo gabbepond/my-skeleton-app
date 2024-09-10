@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Nested from '$lib/components/Nested.svelte'
 
-	let imgSrc = '/pexels-adria-masi-461420600-27372389.jpg'
+	let imgSrc = '/softballsc.jpg'
 </script>
 
 <div class="flex flex-col m-4">

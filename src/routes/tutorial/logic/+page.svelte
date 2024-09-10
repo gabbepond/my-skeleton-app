@@ -1,27 +1,26 @@
-<script lang="ts">
-	import { faker } from '@faker-js/faker'
+<script>
+    import Thing from '$lib/components/Thing.svelte';
 
-    let avatarsVisible = true
+    let things = [
+        { id: 1, name: 'softball' },
+        { id: 2, name: 'bat' },
+        { id: 3, name: 'glove' },
+        { id: 4, name: 'jersey' },
+        { id: 5, name: 'cleats' }
+    ];
 
-	const twentyFiveAvatars = Array.from({ length: 25 }, () => faker.image.avatar())
-
-    function showAvatars() {
-        avatarsVisible === false ? avatarsVisible = true : avatarsVisible = false
+    function handleClick() {
+        things = things.slice(1);
     }
 </script>
 
-<h1 class="m-8">Logic</h1>
-
-<button class="btn btn-lg variant-filled-primary" on:click={showAvatars}>
-    Generate 25 Avatars
-</button>
-
-{#if !avatarsVisible}
-    <div class="m-8 grid grid-cols-5 gap-4">
-        {#each twentyFiveAvatars as avatar}
-            <img src={avatar} alt="avatar" />
-        {/each}
-    </div>
-    {:else}
-    <p>Avatars are hidden</p>
-{/if}
+<div class="flex flex-col items-center justify-center min-h-screen p-4">
+    <button
+        on:click={handleClick}
+        class="btn variant-outline-primary border border-gray-500 px-4 py-2 rounded-md mb-4 text-2xl p-7">
+        Remove First Thing
+    </button>
+    {#each things as thing}
+        <Thing name={thing.name} />
+    {/each}
+</div>

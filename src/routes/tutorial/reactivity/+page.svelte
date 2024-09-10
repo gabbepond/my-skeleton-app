@@ -20,10 +20,14 @@
     $: sum = numbers.reduce((total, currentNumber) => total + currentNumber, 0)
 </script>
 
-<button class="btn variant-filled w-70 m-4" on:click={handleClick}>
-    Clicked {count} {count === 1 ? 'time' : 'times'}
-</button>
+<div class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-center mb-4 text-4xl">Calculate This!</h1>
+    
+    <button class="btn variant-filled w-70 m-4" on:click={handleClick}>
+        Clicked {count} {count === 1 ? 'time' : 'times'}
+    </button>
 
-<p>{numbers.join(' + ')} = {sum}</p>
+    <p class="text-center mb-4">{numbers.join(' + ')} = {sum}</p>
 
-<button class="btn variant-outline-primary" on:click={addNumber}>Add a number</button>
+    <button class="btn variant-outline-primary" on:click={addNumber}>Add a number</button>
+</div>
