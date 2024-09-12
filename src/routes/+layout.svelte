@@ -22,4 +22,13 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
+
+<div class="w-full bg-slate-300">
+	<ul class="flex bg-cyan-300 justify-evenly text-2xl py-2 text-black">
+	  <li><a href="/tutorial/introduction">Introduction</a></li>
+	  <li><a href="/tutorial/reactivity">Reactivity</a></li>
+	  <li><a href="/tutorial/props">Props</a></li>
+	  <li><a href="/tutorial/logic">Logic</a></li>
+	</ul>
+  </div>
 <slot />
