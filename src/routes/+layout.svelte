@@ -24,7 +24,7 @@
 
 
 <div class="w-full bg-slate-300">
-	<ul class="flex bg-cyan-300 justify-evenly text-2xl py-2 text-black">
+	<ul class="flex bg-cyan-300 justify-evenly text-2xl py-2 text-blue-800">
 	  <li><a href="/tutorial/introduction">Introduction</a></li>
 	  <li><a href="/tutorial/reactivity">Reactivity</a></li>
 	  <li><a href="/tutorial/props">Props</a></li>
