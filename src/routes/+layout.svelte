@@ -30,5 +30,5 @@
 	  <li><a href="/tutorial/props">Props</a></li>
 	  <li><a href="/tutorial/logic">Logic</a></li>
 	</ul>
-  </div>
+</div>
 <slot />
