@@ -1,4 +1,6 @@
 <script lang="ts">
+    import InsecureQuestions from '$lib/components/InsecureQuestions.svelte'
+    import Dodger from '$lib/components/Dodger.svelte'
 	import { marked } from 'marked'
 
 	let value = `Some words are *italic*, some are **bold**\nDodgers MLB Stats\n- Pitching\n- Batting\n- Base Running`;
