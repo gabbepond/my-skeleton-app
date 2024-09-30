@@ -1,3 +1,9 @@
+
+**Insecure Questions component**: [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/bindings/%2Bpage.svelte)]
+src/routes/tutorial/bindings/+page.svelte.
+- This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
+- I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
@@ -36,3 +42,6 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+
