@@ -1,4 +1,5 @@
-Insecure Questions component: src/routes/tutorial/bindings/+page.svelte.
+Insecure Questions component: [Link Text](https://src/routes/tutorial/bindings/+page.svelte)
+src/routes/tutorial/bindings/+page.svelte.
 
 This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
 
