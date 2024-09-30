@@ -1,11 +1,8 @@
 
 **Insecure Questions component**: [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/bindings/%2Bpage.svelte)]
 src/routes/tutorial/bindings/+page.svelte.
-
-# This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
-
-
-# I also created an Awesome Fanasty Baseball Page for the LA Dodger MLB BAseball.
+- This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
+- I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
 
 # create-svelte
 
