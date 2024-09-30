@@ -30,6 +30,9 @@
 	function handleSubmit() {
 		alert(`You answered: ${answer} to the question: ${selected.text} with the id of ${selected.id}`)
 	}
+    function handleFavoriteTeamSubmit() {
+        alert(`Your favorite MLB team is: ${favoriteTeam}`)
+    }
 </script>
 
 <div class="card m-4 p-4 w-2/3 mx-auto text-center mt-5">
@@ -115,4 +118,10 @@
 	<div>{@html marked(value)}</div>
 </div>
 
+</div>
+<div class="card m-4 p-4 w-2/3 mx-auto text-center">
+    <h2 class="text-2xl">Quick Question!</h2>
+    <p>Who is your favorite MLB baseball team?</p>
+    <input class="input w-1/3" type="text" placeholder="Enter team name" />
+    <button class="btn variant-filled-primary mt-4" on:click={handleFavoriteTeamSubmit}>Submit</button>
 </div>
