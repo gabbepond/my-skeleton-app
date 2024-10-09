@@ -6,7 +6,7 @@ src/routes/tutorial/bindings/+page.svelte.
 - What is your favorite MLB Baseball team?
 
 
-  **Stores Page**
+  **Stores component**:*
   [([[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))]
   - Has a feature that counts softball emojis when you click add or subtract.
 
