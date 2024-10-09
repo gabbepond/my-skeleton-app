@@ -7,7 +7,7 @@ src/routes/tutorial/bindings/+page.svelte.
 
 
   **Stores Page**
-  [(src/routes/tutorial/stores)]
+  [([src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores))]
   - Has a feature that counts softball emojis when you click add or subtract.
 
 # create-svelte
