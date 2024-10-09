@@ -4,9 +4,13 @@ src/routes/tutorial/bindings/+page.svelte.
 - This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
 - I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
 - What is your favorite MLB Baseball team?
+
+
 **Lifecycle Component**
 - I created an awesome Star Wars Characters page. Linked below..
  [([[[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte)))]
+
+
  
  **Stores Component**:*
   [([[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))]
