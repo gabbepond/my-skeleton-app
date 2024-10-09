@@ -5,6 +5,11 @@ src/routes/tutorial/bindings/+page.svelte.
 - I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
 - What is your favorite MLB Baseball team?
 
+
+  **Stores Page**
+  [(src/routes/tutorial/stores)]
+  - Has a feature that counts softball emojis when you click add or subtract.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
