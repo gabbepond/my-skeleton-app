@@ -31,6 +31,8 @@
 		<li><a href="/tutorial/logic">Logic</a></li>
 		<li><a href="/tutorial/events">Events</a></li>
 		<li><a href="/tutorial/bindings">Bindings</a></li>
+		<li><a href="/tutorial/lifecycle">Lifecycle</a></li>
+		<li><a href="/tutorial/stores">Stores</a></li>
 	</ul>
 </div>
 <slot />
