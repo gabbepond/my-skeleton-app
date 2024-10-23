@@ -20,6 +20,11 @@ src/routes/tutorial/bindings/+page.svelte.
 
   **Motions**
  -   (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))
+ -   I created Motions, Transitions, and Animations.
+ -   I have a Progress Bar that will create Motion when the button is clicked on 0 and 25
+ -   My Animations can be turned ON and OFF with VISIBLE Button. I created these Transitions: Fade, Fly, and Spring/Transform.
+ -   My shuffle board 
+
   
   
 
