@@ -7,14 +7,21 @@ src/routes/tutorial/bindings/+page.svelte.
 
 
 **Lifecycle Component**
-- I created an awesome Star Wars Characters page. Linked below..
+- I created an awesome Star Wars Characters page. Linked below.
  [([[[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte)))]
 
 
  
- **Stores Component**:*
+ **Stores Component**
   [([[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))]
   - Has a feature that counts softball emojis when you click add or subtract.
+
+
+  **Motions**
+  - [([[src/routes/tutorial/motions]([[https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))))]
+   
+  
+  
 
 # create-svelte
 
