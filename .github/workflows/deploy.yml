@@ -1,0 +1,28 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment when code is pushed to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # This checks out your repository's code
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Make sure the Node.js version matches your project setup
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build  # Ensure this command matches your project's build step
+
+      - name: Deploy to Vercel
+        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }}  # Deploy to Vercel with token for authentication
