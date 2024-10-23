@@ -18,8 +18,7 @@ src/routes/tutorial/bindings/+page.svelte.
 
 
   **Motions**
-  - [([[src/routes/tutorial/motions]([[https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))))]
-   
+ -  [([[src/routes/tutorial/motions](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))]
   
   
 
