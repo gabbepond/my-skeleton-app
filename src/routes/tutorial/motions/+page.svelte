@@ -4,6 +4,9 @@
 	import { ProgressBar } from '@skeletonlabs/skeleton'
 	import { fade, fly } from 'svelte/transition'
     import { flip } from 'svelte/animate'
+	let emojis = ['🐶', '🍕', '🌟', '🚀', '🎉', '🦄', '🌈', '🎂'];
+
+
 
 
 
@@ -23,10 +26,9 @@
 
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-    const shuffle = () => {
-        numbers = numbers.sort(() => Math.random() - 0.5)
-    }
-
+	const shuffle = () => {
+	emojis = emojis.sort(() => Math.random() - 0.5); // Shuffle the emojis
+		};
 	let visible = true
 	let size = spring(10)
 	// Function to animate the image upwards when visible
@@ -86,13 +88,14 @@
     </div>
 
 
-    <div class="flex justify-center items-center mt-3 p-5 border-4">
-        <button class="btn text-2xl bg-teal-500 mr-6 border-4" on:click={shuffle}>SHUFFLE</button>
-        <ul>
-            {#each numbers as number (number)}
-            <li class="bg-teal-400 w-36 rounded border-2 text-center my-1 mb-4 text-blue-700 " animate:flip={{duration: 800}}>
-                {number}
-            </li>
-            {/each}
-    </div>
+	<div class="flex justify-center items-center mt-3 p-5 border-4">
+		<button class="btn text-2xl bg-teal-500 mr-6 border-4" on:click={shuffle}>SHUFFLE</button>
+		<ul>
+			{#each emojis as emoji (emoji)}
+			<li class="bg-teal-400 w-36 rounded border-2 text-center my-1 mb-4 text-blue-700 " animate:flip={{duration: 800}}>
+				{emoji}
+			</li>
+			{/each}
+		</ul>
+	</div>
 </div>
