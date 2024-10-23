@@ -14,12 +14,12 @@ src/routes/tutorial/bindings/+page.svelte.
 
  
  **Stores Component**
-  [([[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))]
+ (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))
   - Has a feature that counts softball emojis when you click add or subtract.
 
 
   **Motions**
- -  [([[src/routes/tutorial/motions](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))]
+ -   (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))
   
   
 
