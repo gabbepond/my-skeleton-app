@@ -7,14 +7,26 @@ src/routes/tutorial/bindings/+page.svelte.
 
 
 **Lifecycle Component**
-- I created an awesome Star Wars Characters page. Linked below..
- [([[[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte)))]
+- I created an awesome Star Wars Characters page. Linked below.
+  (([https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte)))]
+
 
 
  
- **Stores Component**:*
-  [([[src/routes/tutorial/stores](https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))]
+ **Stores Component**
+ (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))
   - Has a feature that counts softball emojis when you click add or subtract.
+
+
+  **Motions**
+ -   (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))
+ -   I created Motions, Transitions, and Animations.
+ -   I have a Progress Bar that will create Motion when the button is clicked on 0 and 25
+ -   My Animations can be turned ON and OFF with VISIBLE Button. I created these Transitions: Fade, Fly, and Spring/Transform.
+ -   My shuffle board 
+
+  
+  
 
 # create-svelte
 
