@@ -8,8 +8,8 @@ src/routes/tutorial/bindings/+page.svelte.
 
 **Lifecycle Component**
 - I created an awesome Star Wars Characters page. Linked below.
-(https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/stores)](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))]
-https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte
+  (([https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte)))]
+
 
 
  
