@@ -12,7 +12,7 @@
 	onMount(() => {
 		console.log('onMount')
 		getStarWarsCharacter()
-		console.log(get(starWarsCharacterStore))
+		// console.log(get(starWarsCharacterStore))
 		return () => {
 			console.log('onDestroy')
 		}
@@ -30,7 +30,7 @@
             id: randomCharacterId.toString()
         }
 
-		starWarsCharacterStore.update(characters => [...characters, starWarsCharacter])
+		starWarsCharacter.update(characters => [...characters, starWarsCharacter])
 	}
 </script>
 

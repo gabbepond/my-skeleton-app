@@ -5,6 +5,12 @@
 	import { fade, fly } from 'svelte/transition'
     import { flip } from 'svelte/animate'
 	let emojis = ['🐶', '🍕', '🌟', '🚀', '🎉', '🦄', '🌈', '🎂'];
+	
+    let flipped = false;
+
+    function toggleFlip() {
+        flipped = !flipped;
+    }
 
 
 
@@ -43,6 +49,8 @@
 		<div class="flex justify-center items-center">
 		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 0)}>0</button>
 		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 25)}>25</button>
+		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 50)}>50</button>
+		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 100)}>100</button>
 	</div>
 	</div>
 
@@ -78,12 +86,34 @@
 		</label>		
         <div class="gap-4 flex justify-center items-center">
             {#if visible}
-            <img src="https://place.dog/300/200" alt="Dog" transition:fly={{ y: 400, duration: 1000 }} />
-			<!-- <img src="https://place.dog/300/200" alt="Dog" transition:fly={{ x: 100, duration: 800 }} /> -->
-			<img src="https://place.dog/300/200" alt="Dog" style="transform: translate({$coords.x}px, {$coords.y}px);" />
-            <img src="https://place.dog/300/200" alt="Dog" in:fly={{ y: 200, duration: 2000}} out:fade />
-            <div class="bg-teal-400 w-80 h-50 text-2xl text-center text-blue-700 " transition:fade={{ duration: 1000 }}> <h1>🦴 Dog Bone 🦴</h1></div>
+			<img src="/Dodger3.jpg" alt="Dog" transition:fly={{ x: 100, duration: 800 }} />
+            <img src="/Dodger2.JPG" alt="Dog" in:fly={{ y: 200, duration: 2000}} out:fade />
+			<img src="/Dodger1.jpg" alt="Dodger" in:fly={{ y: 200, duration: 2000 }} out:fade />
+			<img src="/Dodger4.jpg" alt="Dog" transition:fly={{ x: 100, duration: 800 }} />
+
+			
+            <!-- <div class="bg-teal-400 w-80 h-50 text-2xl text-center text-blue-700 " transition:fade={{ duration: 1000 }}> <h1>🦴 Dog Bone 🦴</h1></div> -->
             {/if}
+
+			<button class="card-container" on:click={toggleFlip} type="button">
+				<div class="card {flipped ? 'flipped' : ''}">
+					<!-- Front of the card -->
+					<div class="card-front">
+						<p> Flip Card</p>
+					</div>
+			
+					<!-- Back of the card -->
+					<div class="card-back">
+						<h2>Name: Dodger</h2>
+						<p>Birth Date: 06/16/23</p>
+						<p>Breed: Mini Goldendoodle</p>
+					</div>
+				</div>
+			</button>
+			
+
+			
+	
         </div>
     </div>
 
@@ -99,3 +129,53 @@
 		</ul>
 	</div>
 </div>
+<style>
+	/* Container for centering and sizing */
+	.card-container {
+		perspective: 1000px;
+		width: 300px;
+		height: 200px;
+		cursor: pointer;
+	}
+
+	/* Card setup */
+	.card {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transform-style: preserve-3d;
+		transition: transform 0.6s;
+	}
+
+	/* Flip the card */
+	.flipped {
+		transform: rotateY(180deg);
+	}
+
+	/* Front and back face styling */
+	.card-front,
+	.card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2em;
+		color: white;
+	}
+
+	/* Front styling */
+	.card-front {
+		background-color: #222;
+	}
+
+	/* Back styling */
+	.card-back {
+		background-color: #4A90E2;
+		transform: rotateY(180deg);
+		flex-direction: column;
+		text-align: center;
+	}
+</style>
