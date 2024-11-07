@@ -15,13 +15,6 @@
     <h1 class="h1 mt-10">🦴🦴🦴</h1>
 </div> -->
 
-
-<!-- <div class="container h-full mx-auto flex flex-col justify-center items-center ">
-<a href="/api/auth/login">Sign in</a>
-<a href="/api/auth/register">Sign up</a> 
-<a href="/api/auth/logout"> Log Out</a>
- </div>  -->
-
 <script lang="ts">
 import { currentUser } from '$lib/stores/currentUser';
 </script>
