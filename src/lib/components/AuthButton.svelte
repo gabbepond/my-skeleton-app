@@ -13,7 +13,7 @@
 </script>
 
 {#if $currentUser}
-	<div class="flex items-center">
+	<div class="flex items-center bg-cyan-300">
 		<button class="btn bg-gray-800 m-1" on:click={handleLogout}>Logout</button>
 		<div>
             <Avatar src={$currentUser.picture} alt="avatar" class="w-9 rounded-full" />

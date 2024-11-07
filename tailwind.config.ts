@@ -62,4 +62,3 @@ export default {
 	],
 } satisfies Config;
 
-

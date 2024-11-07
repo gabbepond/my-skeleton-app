@@ -16,13 +16,13 @@
 </div> -->
 
 
-<div class="container h-full mx-auto flex flex-col justify-center items-center ">
+<!-- <div class="container h-full mx-auto flex flex-col justify-center items-center ">
 <a href="/api/auth/login">Sign in</a>
 <a href="/api/auth/register">Sign up</a> 
 <a href="/api/auth/logout"> Log Out</a>
- </div> 
+ </div>  -->
 
-<!-- <script lang="ts">
+<script lang="ts">
 import { currentUser } from '$lib/stores/currentUser';
 </script>
 
@@ -31,4 +31,4 @@ import { currentUser } from '$lib/stores/currentUser';
   <h1 class="text-4xl"> Welcome, {$currentUser.name}! </h1>
   <img src={$currentUser.picture} alt="avatar" class="rounded-full h-40 w-40 m-4"/>
   {/if}
-</div> -->
+</div>
