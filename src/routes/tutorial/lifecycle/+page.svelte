@@ -34,7 +34,7 @@
 	}
 </script>
 
-<h1>Lifecyle Route</h1>
+<h1>Lifecycle Route</h1>
 
 <div class="flex flex-col items-center">
     <p>Star Wars Character</p>
