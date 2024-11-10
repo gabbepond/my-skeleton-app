@@ -46,6 +46,8 @@
 			<li><a href="/tutorial/lifecycle">Lifecycle</a></li>
 			<li><a href="/tutorial/stores">Stores</a></li>
 			<li><a href="/tutorial/motions">Motions</a></li>
+			<li><a href="/pokemon">Pokemon</a></li>
+			<li><a href="/chat">Chat</a></li>
 		</ul>
 		<ThemeMenu />
 	{:else}
