@@ -27,6 +27,7 @@
 <script>
 	import { onMount } from 'svelte';
   
+	// @ts-ignore
 	let dogImages = [];
 	let loading = true;
   
