@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { onMount } from 'svelte'
 
 	let pokeDex: any[] = []
@@ -23,4 +23,57 @@
         </div>
 		{/each}
 	</div>
-</main>
+</main> -->
+<script>
+	import { onMount } from 'svelte';
+  
+	let dogImages = [];
+	let loading = true;
+  
+	// Function to fetch dog images
+	async function fetchDogImages() {
+	  loading = true;
+	  try {
+		const res = await fetch('https://dog.ceo/api/breeds/image/random/28');
+		const data = await res.json();
+		dogImages = data.message;
+	  } catch (error) {
+		console.error('Error fetching dog images:', error);
+	  } finally {
+		loading = false;
+	  }
+	}
+  
+	// Fetch images when the component mounts
+	onMount(fetchDogImages);
+  </script>
+  
+  <main class="max-w-4xl mx-auto p-6">
+	<h1 class="text-3xl font-bold mb-4">🐶 Dog Gallery</h1>
+  
+	{#if loading}
+	  <p>Loading...</p>
+	{/if}
+  
+	<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+	  {#each dogImages as img}
+		<div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+		  <img src={img} alt="Random dog" class="w-full h-40 object-cover" />
+		</div>
+	  {/each}
+	</div>
+  
+	<button
+	  class="bg-blue-500 text-white py-2 px-4 mt-6 rounded hover:bg-blue-600"
+	  on:click={fetchDogImages}
+	>
+	  Load More Dogs
+	</button>
+  </main>
+  
+  <style>
+	main {
+	  text-align: center;
+	}
+  </style>
+  
