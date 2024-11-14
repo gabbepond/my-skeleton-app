@@ -68,9 +68,9 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 
-## Log iN Screen
+## Log In Screen
 [https://my-skeleton-1maltn1ms-gabbe-ponds-projects.vercel.app/](https://my-skeleton-app-ww58.vercel.app/)
-I created a awesome log in screen.
+I created an awesome login screen.
 
 
 
