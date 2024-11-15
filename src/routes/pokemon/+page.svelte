@@ -37,6 +37,7 @@
 	  try {
 		const res = await fetch('https://dog.ceo/api/breeds/image/random/28');
 		const data = await res.json();
+		console.log ("dog",data)
 		dogImages = data.message;
 	  } catch (error) {
 		console.error('Error fetching dog images:', error);

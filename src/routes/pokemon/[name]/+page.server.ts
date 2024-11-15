@@ -16,22 +16,32 @@
 //         }
 //     }
 // }
+// src/routes/+page.server.ts
 import type { PageServerLoad } from './$types';
 
+type DogImage = {
+  url: string;
+  breed: string;
+};
+
+// Fetch 25 random dog images from Dog CEO API
 export const load: PageServerLoad = async () => {
   try {
-    // Fetch random dog images from the API
-    const res = await fetch('https://dog.ceo/api/breeds/image/random/12');
+    const res = await fetch('https://dog.ceo/api//image/random/12');
     const data = await res.json();
 
-    // Return the fetched data
-    return {
-      dogImages: data.message
-    };
+    // Extract breed from the image URL
+    const dogImages: DogImage[] = data.message.map((url: string) => {
+      const breed = url.split('/')[4]; // Extract breed name from the URL
+      return { url, breed };
+    });
+
+
+    return { dogImages };
   } catch (error) {
     console.error('Error fetching dog images:', error);
-    return {
-      dogImages: []
-    };
+    return { dogImages: [] };
   }
 };
+
+
