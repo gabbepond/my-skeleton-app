@@ -74,7 +74,7 @@ I created an awesome login screen.
 
 ## Dogs
 I created an awesome API page of Dog images, Breed, Name, and URLs.
-[https://my-skeleton-app-ww58.vercel.app/pokemon] (https://my-skeleton-app-ww58.vercel.app/pokemon)
+[https://my-skeleton-app-ww58.vercel.app/pokemon]
  
 
 
