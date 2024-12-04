@@ -1,0 +1,11 @@
+<!-- src/lib/icons/UserIcon.svelte -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="8" r="4" fill="currentColor"/>
+    <path d="M12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
+</svg>
+
+<style>
+    svg {
+        color: #000; /* Change the color as needed */
+    }
+</style>
