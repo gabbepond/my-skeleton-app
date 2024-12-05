@@ -13,6 +13,7 @@ export const load: PageServerLoad = async () => {
     const breedMatch = url.match(/breeds\/([^/]+)\//);
     const breed = breedMatch ? breedMatch[1].replace('-', ' ') : 'Unknown Breed';
     const name = `Doggo-${Math.random().toString(36).substr(2, 5)}`; // Generate a random name
+    console.log({ url, breed, name});
     return { url, breed, name };
   };
 
