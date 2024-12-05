@@ -85,7 +85,10 @@
 					</div>
 				{:else}
 					<div class="flex justify-end group/chat hover:bg-gray-400 hover:rounded-lg ml-auto space-x-1">
-						<Avatar class="h-12 shrink-0" src="/img-tutor-girl.png" alt="Tutor" width="w-12" />
+						<!-- <Avatar class="h-12 shrink-0" src="/img-tutor-girl.png" alt="Tutor" width="w-12" /> -->
+                        <div class="w-9 h-9 rounded-full flex items-center justify-center bg-gray-200 text-black font-bold">
+                            C
+                          </div>
 						<div in:fly={{y: 50, duration: 1000}} class="assistant-chat">{@html chat.content}</div>
 						<button type="button" class="group/delete invisible btn-icon h-6 w-6 group-hover/chat:visible" on:click={deleteChat(chat)}>
 							<img src="/x-circle-close-delete.svg" alt="Delete Chat" />
