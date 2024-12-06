@@ -45,17 +45,17 @@
 
 <div class="flex flex-col gap-16 m-10">
 	<div>
-		<ProgressBar bind:value={$progress} max={100} meter="bg-red-400" track="bg-teal-400" />
+		<ProgressBar bind:value={$progress} max={100} meter="bg-red-400" track="bg-cyan-300" />
 		<div class="flex justify-center items-center">
-		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 0)}>0</button>
-		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 25)}>25</button>
-		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 50)}>50</button>
-		<button class="btn bg-teal-400 m-5 border-2 text-blue-700" on:click={() => ($progress = 100)}>100</button>
+		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 0)}>0</button>
+		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 25)}>25</button>
+		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 50)}>50</button>
+		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 100)}>100</button>
 	</div>
 	</div>
 
 	<div class="flex gap-2">
-		<div class="w-48 select-none text-teal-400">
+		<div class="w-48 select-none text-cyan-300">
 			<label>
 				<h3>stiffness ({coords.stiffness})</h3>
 				<input bind:value={coords.stiffness} type="range" min="0.01" max="1" step="0.01" />
@@ -81,7 +81,7 @@
 
     <div class="text-center text-3xl">
 		<label class="flex items-center justify-center gap-2 mb-6">
-			<input class="scale-150 text-teal-400" type="checkbox" bind:checked={visible} />
+			<input class="scale-150 text-cyan-300" type="checkbox" bind:checked={visible} />
 			<span class="text-3xl">VISIBLE</span>
 		</label>		
         <div class="gap-4 flex justify-center items-center">
@@ -99,7 +99,7 @@
 				<div class="card {flipped ? 'flipped' : ''}">
 					<!-- Front of the card -->
 					<div class="card-front">
-						<p> Flip Card</p>
+						<p>Flip Card</p>
 					</div>
 			
 					<!-- Back of the card -->
@@ -119,10 +119,10 @@
 
 
 	<div class="flex justify-center items-center mt-3 p-5 border-4">
-		<button class="btn text-2xl bg-teal-500 mr-6 border-4" on:click={shuffle}>SHUFFLE</button>
+		<button class="btn text-2xl bg-cyan-300 mr-6 border-4 text-blue-800" on:click={shuffle}>SHUFFLE</button>
 		<ul>
 			{#each emojis as emoji (emoji)}
-			<li class="bg-teal-400 w-36 rounded border-2 text-center my-1 mb-4 text-blue-700 " animate:flip={{duration: 800}}>
+			<li class="bg-cyan-300 w-36 rounded border-2 text-center my-1 mb-4 text-blue-800 " animate:flip={{duration: 800}}>
 				{emoji}
 			</li>
 			{/each}

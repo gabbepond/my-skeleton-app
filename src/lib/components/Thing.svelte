@@ -4,7 +4,17 @@
 		bat: '🏏',
 		glove: '🧤',
 		jersey: '👕',
-		cleats: '👟'
+		cleats: '👟',
+		helmet: '🪖',
+		whistle: '📣',
+		'water bottle': '🍼',
+		towel: '🏖️',
+		sneakers: '👟',
+		goalpost: '🏐',
+		coach: '👨‍🏫',
+		scoreboard: '🏆',
+		medal: '🏅',
+		'team flag': '🚩'
 	};
 
 	export let name: keyof typeof emojis; // Ensure `name` is a key of `emojis`

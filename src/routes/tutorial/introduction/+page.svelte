@@ -4,9 +4,8 @@
 	let imgSrc = '/softballsc.jpg'
 </script>
 
-<div class="flex flex-col m-4">
+<div class="flex flex-col m-4 border-2 border-cyan-300">
+	<Nested answer={'Sports Sports Sports!!!'} />
 
-	<Nested answer={'Sports Sports!!!'}/>
-
-<img src={imgSrc} class="mt-8" alt="A Beautiful Softball Field"/>
+	<img src={imgSrc} class="mt-8" alt="A Beautiful Softball Field" />
 </div>

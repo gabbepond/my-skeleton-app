@@ -13,10 +13,10 @@
 </script>
 
 {#if $currentUser}
-	<div class="flex items-center bg-cyan-300">
-		<button class="btn bg-gray-800 m-1" on:click={handleLogout}>Logout</button>
-		<div>
-            <Avatar src={$currentUser.picture} alt="avatar" class="w-9 rounded-full" />
+	<div class="flex items-center bg-gray-300 mr-5">
+		<button class="btn bg-gray-800 m-1 border-2 border-cyan-300 rounded-sm" on:click={handleLogout}>Logout</button>
+		<div class="ml-2">
+            <Avatar src={$currentUser.picture} alt="avatar" class="w-9 rounded-full border-2 border-cyan-300" />
         </div>
 	</div>
 {:else}

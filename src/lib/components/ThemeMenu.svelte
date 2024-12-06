@@ -4,8 +4,8 @@
 
 </script>
 
-<div class="bg-cyan-300 w-full">
-    <div class="m-1">
+<div class="bg-gray-300 w-half ">
+    <div class="m-1 border-2 border-cyan-300 rounded-sm">
         <select class="select" bind:value={$theme}>
             <option value="skeleton">Skeleton</option>
             <option value="wintry">Wintry</option>
