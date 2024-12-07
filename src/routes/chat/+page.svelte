@@ -59,7 +59,7 @@
 		return () => chatHistoryStore.set($chatHistoryStore.filter((c) => c !== chat))
 	}
 </script>
-<h1 class="text-center text-2xl m-5 text-cyan-300"> GABBE GOO CHAT BOT</h1>
+<h1 class="text-center text-2xl m-5 text-cyan-300"> GABBE GOO CHAT BOT 🤖</h1>
 
 <main class="flex flex-col w-screen">
 	<form class="flex flex-col w-3/4 mx-auto space-y-4" on:submit={handleSubmit}>

@@ -1,29 +1,27 @@
-// import type { PageServerLoad } from './$types';
+import type { PageServerLoad } from './$types';
 
-// export const load: PageServerLoad = async ({ params }) => {
-//   const { name } = params;
+export const load: PageServerLoad = async ({ params }) => {
+  const breed = params.name; // Get the dynamic breed name from the URL
 
-//   try {
-//     const res = await fetch(`https://api.thedogapi.com/v2/breeds/${name}`);
-//     const data = await res.json();
+  try {
+    // Fetch images for the specific breed
+    const response = await fetch(`https://dog.ceo/api/breed/${breed}/images/random/12`);
 
-//     if (!data || !data.name) {
-//       throw new Error('Breed not found');
-//     }
+    if (!response.ok) {
+      throw new Error(`Failed to fetch images for breed: ${breed}`);
+    }
 
-//     return {
-//       breed: {
-//         id: data.id,
-//         name: data.name,
-//         image: data.image?.url || '',
-//         description: data.temperament || 'No description available.',
-//         origin: data.origin || 'Unknown',
-//         lifeSpan: data.life_span || 'Unknown',
-//       },
-//     };
-//   } catch (error) {
-//     console.error('Error fetching breed details:', error);
-//     return { breed: null };
-//   }
-// };
+    const { message: images } = await response.json();
+
+    // Return the breed and images to the front end
+    return {
+      breed,
+      images,
+    };
+  } catch (error) {
+    console.error('Error fetching breed data:', error);
+    throw error;
+  }
+};
+
 

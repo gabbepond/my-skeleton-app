@@ -2,11 +2,13 @@
 	import { onMount } from 'svelte'
 	import { get } from 'svelte/store'
 
-	let starWarsCharacter: { name: string; height: string; mass: string, id: string } = {
+	let starWarsCharacter: { name: string; height: string; mass: string, id: string, gender: string, hair_color: string } = {
 		name: '',
 		height: '',
 		mass: '',
-        id: ''
+        id: '',
+		gender: '',
+		hair_color: ''
 	}
 
 	onMount(() => {
@@ -27,24 +29,29 @@
             name: data.name,
             height: data.height,
             mass: data.mass,
-            id: randomCharacterId.toString()
+            id: randomCharacterId.toString(),
+			gender: data.gender,
+			hair_color: data.hair_color
+			
         }
-
+		console.log("starWarsCharacter", starWarsCharacter)
 		starWarsCharacter.update(characters => [...characters, starWarsCharacter])
 	}
 </script>
 
-<h1>Lifecycle Route</h1>
+<h1 class=" text-cyan-300 mt-4 text-center text-xl">Lifecycle Of A Stars Wars Character</h1>
 
-<div class="flex flex-col items-center">
-    <p>Star Wars Character</p>
-    <p>{starWarsCharacter.name}</p>
-    <p>{starWarsCharacter.height}</p>
-    <p>{starWarsCharacter.mass}</p>
-    <img src={`https://starwars-visualguide.com/assets/img/characters/${starWarsCharacter.id}.jpg`} alt="Star Wars Character" />
+<div class="card m-4 p-4 w-1/3 mx-auto flex flex-col items-center rounded-lg border-2 border-cyan-300">
+  
+    <p>Name: {starWarsCharacter.name}</p>
+    <p>Height: {starWarsCharacter.height}</p>
+    <p>Weight: {starWarsCharacter.mass}</p>
+	<p>Gender: {starWarsCharacter.gender}</p>
+	<p>Hair Color: {starWarsCharacter.hair_color}</p>
+    <img class="mt-4 border-2 border-white" src={`https://starwars-visualguide.com/assets/img/characters/${starWarsCharacter.id}.jpg`} alt="Star Wars Character"/>
     
     <!-- Button to change the character -->
-    <button class="mt-4 p-2 bg-blue-500 text-white rounded" on:click={getStarWarsCharacter}>
+    <button class="mt-4 p-2 bg-cyan-300 text-blue-800 rounded-full border-2 border-purple-600" on:click={getStarWarsCharacter}>
         Change Character
     </button>
 </div>

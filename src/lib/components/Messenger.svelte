@@ -5,10 +5,10 @@
     
     function sayHello() {
         dispatch('message', {
-            text: 'Hello! My name is Inigo Montoya. You killed my father. Prepare to die.'
+            text: 'Ahoy! I am your guide through the stormy seas of confusion. Point me to the trouble, and let the journey begin!'
         })
     }
     
     </script>
     
-    <button class="btn variant-filled-primary m-4" on:click={sayHello}>Click to say hello</button>
+    <button class="btn bg-cyan-300 text-blue-800 m-4" on:click={sayHello}>Click to say hello</button>

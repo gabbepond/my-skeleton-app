@@ -16,7 +16,11 @@
 	}
 
 	function decrement() {
-		count.update((n) => n - 1) // Decrement the count
+		if (count_value > 0)
+			count.update((n) => n - 1) // Decrement the count
+		else {
+			alert('The count cannot be less than 0')
+		}
 	}
 
 	function reset() {
@@ -33,11 +37,10 @@
 	<h1 class="text-center p-5 mt-5 text-xl">THE SOFTBALL COUNT IS {count_value}</h1>
 
 	<div class="text-center">
+		<!-- Display the emojis here -->
+		<p class="mb-5">{generateSoftballs(count_value)}</p>
 		<button class="btn variant-outline-primary m-2" on:click={increment}>+</button>
 		<button class="btn variant-outline-primary m-2" on:click={decrement}>-</button>
 		<button class="btn variant-outline-primary m-2" on:click={reset}>RESET</button>
-
-		<p class="mt-5">{generateSoftballs(count_value)}</p>
-		<!-- Display the emojis here -->
 	</div>
 </div>

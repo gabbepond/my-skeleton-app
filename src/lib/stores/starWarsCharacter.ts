@@ -6,6 +6,8 @@ interface StarWarsCharacter {
 	height: string
 	mass: string
 	id: string
+	gender: string
+	hair_color: string
 }
 
 export const starWarsCharacterStore: Writable<StarWarsCharacter[]> = writable([])

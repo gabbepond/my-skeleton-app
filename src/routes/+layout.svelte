@@ -70,12 +70,12 @@
 					Stores
 				{:else if $page.url.pathname === '/tutorial/motions'}
 					Motions
-				{:else if $page.url.pathname === '/pokemon'}
+				{:else if $page.url.pathname === '/dog'}
 					Dogs
 				{:else if $page.url.pathname === '/chat'}
 					Chat
 				{:else}
-					Hi there!
+					Let's Learn Svelte!
 				{/if}
 			</h1>
 		</div>
@@ -93,7 +93,7 @@
 					{ href: '/tutorial/lifecycle', label: 'Lifecycle', emoji: '⏰' },
 					{ href: '/tutorial/stores', label: 'Stores', emoji: '💾' },
 					{ href: '/tutorial/motions', label: 'Motions', emoji: '🏃' },
-					{ href: '/pokemon', label: 'Dogs', emoji: '🐶' },
+					{ href: '/dog', label: 'Dogs', emoji: '🐶' },
 					{ href: '/chat', label: 'Chat', emoji: '💬' }
 				] as route}
 					<li class="px-4 py-2 flex items-center gap-2 hover:bg-white hover:shadow-md transition-all" on:click={() => (isMenuOpen = false)}>

@@ -1,32 +1,45 @@
 <script lang="ts">
-    export let data: {
-      breed: {
-        id: string;
-        name: string;
-        image: string;
-        description: string;
-        origin: string;
-        lifeSpan: string;
-      } | null;
-    };
-  </script>
-  
-  {#if data.breed}
-    <div class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <img
-        src={data.breed.image}
-        alt={data.breed.name}
-        class="w-full h-64 object-cover rounded-lg mb-4"
-      />
-      <h1 class="text-2xl font-bold mb-2">{data.breed.name}</h1>
-      <p class="text-gray-700 mb-4"><strong>Origin:</strong> {data.breed.origin}</p>
-      <p class="text-gray-700 mb-4"><strong>Life Span:</strong> {data.breed.lifeSpan}</p>
-      <p class="text-gray-700">{data.breed.description}</p>
-    </div>
-  {:else}
-    <div class="text-center">
-      <p class="text-lg text-red-500">Breed not found!</p>
-      <a href="/dog" class="text-blue-500 underline">Go back to the dog list</a>
-    </div>
-  {/if}
-  
+  export let data: { breed: string; images: string[] };
+  console.log("data", data);
+
+  // Expanded list of dog names
+  const names = [
+    'Buddy', 'Charlie', 'Max', 'Bella', 'Lucy', 'Cooper', 'Daisy', 'Luna', 'Rocky', 'Molly', 
+    'Rex', 'Oscar', 'Zoe', 'Bailey', 'Sadie', 'Jack', 'Chloe', 'Lily', 'Leo', 'Maggie', 
+    'Jax', 'Finn', 'Ruby', 'Milo', 'Toby'
+  ];
+
+  // Function to generate a random dog name
+  const generateRandomName = () => {
+    return names[Math.floor(Math.random() * names.length)];
+  };
+
+  // Map each image to a unique dog name
+  const dogCards = data.images.map((image) => ({
+    image,
+    name: generateRandomName(),
+  }));
+</script>
+
+<main class="max-w-4xl mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-4 capitalize">🐾 {data.breed}</h1>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {#each dogCards as dog}
+      <div class=" rounded-lg overflow-hidden shadow-lg bg-cyan-300">
+        <img src={dog.image} alt={data.breed} class="w-full h-40 object-cover mb-2" />
+        <p class="text-center  text-blue-800 font-semibold">{dog.name}</p>
+      </div>
+    {/each}
+  </div>
+</main>
+
+<style>
+  main {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+</style>
