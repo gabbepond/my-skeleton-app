@@ -3,19 +3,15 @@
 	import { cubicOut } from 'svelte/easing'
 	import { ProgressBar } from '@skeletonlabs/skeleton'
 	import { fade, fly } from 'svelte/transition'
-    import { flip } from 'svelte/animate'
-	let emojis = ['🐶', '🍕', '🌟', '🚀', '🎉', '🦄', '🌈', '🎂'];
+	import { flip } from 'svelte/animate'
+	let emojis = ['🐶', '🍕', '🌟', '🚀', '🎉', '🦄', '🌈', '🎂']
 	
-    let flipped = false;
 
-    function toggleFlip() {
-        flipped = !flipped;
-    }
+	let flipped = false
 
-
-
-
-
+	function toggleFlip() {
+		flipped = !flipped
+	}
 
 	const progress = tweened(0, {
 		duration: 1000,
@@ -30,39 +26,48 @@
 		}
 	)
 
-    let numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+	let numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
 	const shuffle = () => {
-	emojis = emojis.sort(() => Math.random() - 0.5); // Shuffle the emojis
-		};
+		emojis = emojis.sort(() => Math.random() - 0.5) // Shuffle the emojis
+	}
 	let visible = true
 	let size = spring(10)
 	// Function to animate the image upwards when visible
 	const moveUp = () => {
-		coords.set({ x: 0, y: 0 }); // move image up to its final position
-	};
+		coords.set({ x: 0, y: 0 }) // move image up to its final position
+	}
 </script>
+
+<h2 class="text-center text-lg text-cyan-300 mt-4">The Likehood of adopting a Dog 🐶</h2>
 
 <div class="flex flex-col gap-16 m-10">
 	<div>
+		<!-- Progress Bar-->
 		<ProgressBar bind:value={$progress} max={100} meter="bg-red-400" track="bg-cyan-300" />
+
+		
 		<div class="flex justify-center items-center">
-		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 0)}>0</button>
-		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 25)}>25</button>
-		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 50)}>50</button>
-		<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 100)}>100</button>
-	</div>
+			<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 0)}
+				>0</button>
+			<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 25)}
+				>25</button>
+			<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 50)}
+				>50</button>
+			<button class="btn bg-cyan-300 m-5 border-2 text-blue-800" on:click={() => ($progress = 100)}
+				>100</button>
+		</div>
 	</div>
 
 	<div class="flex gap-2">
 		<div class="w-48 select-none text-cyan-300">
 			<label>
-				<h3>stiffness ({coords.stiffness})</h3>
+				<h3>Sniffness ({coords.stiffness})</h3>
 				<input bind:value={coords.stiffness} type="range" min="0.01" max="1" step="0.01" />
 			</label>
 
 			<label>
-				<h3>damping ({coords.damping})</h3>
+				<h3>Bark ({coords.damping})</h3>
 				<input bind:value={coords.damping} type="range" min="0.01" max="1" step="0.01" />
 			</label>
 		</div>
@@ -75,25 +80,35 @@
 			}}
 			on:mousedown={() => size.set(30)}
 			on:mouseup={() => size.set(10)}>
-			<circle fill="#f00" cx={$coords.x} cy={$coords.y} r={$size} />
+			<!-- <circle fill="#f00" cx={$coords.x} cy={$coords.y} r={$size} /> -->
+			<svg>
+				<text 
+				  x={$coords.x} 
+				  y={$coords.y} 
+				  font-size="{$size * 4}" 
+				  text-anchor="middle" 
+				  dominant-baseline="middle">
+				  🐶
+				</text>
+			  </svg>
+			  
 		</svg>
 	</div>
 
-    <div class="text-center text-3xl">
+	<div class="text-center text-3xl">
 		<label class="flex items-center justify-center gap-2 mb-6">
 			<input class="scale-150 text-cyan-300" type="checkbox" bind:checked={visible} />
 			<span class="text-3xl">VISIBLE</span>
-		</label>		
-        <div class="gap-4 flex justify-center items-center">
-            {#if visible}
-			<img src="/Dodger3.jpg" alt="Dog" transition:fly={{ x: 100, duration: 800 }} />
-            <img src="/Dodger2.JPG" alt="Dog" in:fly={{ y: 200, duration: 2000}} out:fade />
-			<img src="/Dodger1.jpg" alt="Dodger" in:fly={{ y: 200, duration: 2000 }} out:fade />
-			<img src="/Dodger4.jpg" alt="Dog" transition:fly={{ x: 100, duration: 800 }} />
+		</label>
+		<div class="gap-4 flex justify-center items-center">
+			{#if visible}
+				<img src="/Dodger3.jpg" alt="Dog" transition:fly={{ x: 100, duration: 800 }} />
+				<img src="/Dodger2.JPG" alt="Dog" in:fly={{ y: 200, duration: 2000 }} out:fade />
+				<img src="/Dodger1.jpg" alt="Dodger" in:fly={{ y: 200, duration: 2000 }} out:fade />
+				<img src="/Dodger4.jpg" alt="Dog" transition:fly={{ x: 100, duration: 800 }} />
 
-			
-            <!-- <div class="bg-teal-400 w-80 h-50 text-2xl text-center text-blue-700 " transition:fade={{ duration: 1000 }}> <h1>🦴 Dog Bone 🦴</h1></div> -->
-            {/if}
+				<!-- <div class="bg-teal-400 w-80 h-50 text-2xl text-center text-blue-700 " transition:fade={{ duration: 1000 }}> <h1>🦴 Dog Bone 🦴</h1></div> -->
+			{/if}
 
 			<button class="card-container" on:click={toggleFlip} type="button">
 				<div class="card {flipped ? 'flipped' : ''}">
@@ -101,7 +116,7 @@
 					<div class="card-front">
 						<p>Flip Card</p>
 					</div>
-			
+
 					<!-- Back of the card -->
 					<div class="card-back">
 						<h2>Name: Dodger</h2>
@@ -111,25 +126,24 @@
 				</div>
 				<!-- DODGER -->
 			</button>
-			
-
-			
-	
-        </div>
-    </div>
-
+		</div>
+	</div>
 
 	<div class="flex justify-center items-center mt-3 p-5 border-4">
-		<button class="btn text-2xl bg-cyan-300 mr-6 border-4 text-blue-800" on:click={shuffle}>SHUFFLE</button>
+		<button class="btn text-2xl bg-cyan-300 mr-6 border-4 text-blue-800" on:click={shuffle}
+			>SHUFFLE</button>
 		<ul>
 			{#each emojis as emoji (emoji)}
-			<li class="bg-cyan-300 w-36 rounded border-2 text-center my-1 mb-4 text-blue-800 " animate:flip={{duration: 800}}>
-				{emoji}
-			</li>
+				<li
+					class="bg-cyan-300 w-36 rounded border-2 text-center my-1 mb-4 text-blue-800"
+					animate:flip={{ duration: 800 }}>
+					{emoji}
+				</li>
 			{/each}
 		</ul>
 	</div>
 </div>
+
 <style>
 	/* Container for centering and sizing */
 	.card-container {
@@ -174,7 +188,7 @@
 
 	/* Back styling */
 	.card-back {
-		background-color: #4A90E2;
+		background-color: #4a90e2;
 		transform: rotateY(180deg);
 		flex-direction: column;
 		text-align: center;
