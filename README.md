@@ -22,6 +22,7 @@
 **Chat**- [(https://my-skeleton-app-ww58.vercel.app/chat)]
 
 
+
 **Insecure Questions component**: [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/bindings/%2Bpage.svelte)]
 src/routes/tutorial/bindings/+page.svelte.
 - This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
