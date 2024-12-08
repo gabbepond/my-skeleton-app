@@ -1,3 +1,16 @@
+**Routes**
+**Introduction**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/introduction)]
+**Reactivity**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/reactivity)]
+**Props**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/props)]
+**Logic**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/logic)]
+**Events**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/events)]
+**Bindings**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/bindings)]
+**Lifecycle**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/lifecycle)]
+**Stores**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/stores)]
+**Motions**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/motions)]
+**Dogs**- [(https://my-skeleton-app-ww58.vercel.app/dog)]
+**Chat**- [(https://my-skeleton-app-ww58.vercel.app/chat)]
+
 
 **Insecure Questions component**: [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/bindings/%2Bpage.svelte)]
 src/routes/tutorial/bindings/+page.svelte.
@@ -32,40 +45,6 @@ src/routes/tutorial/bindings/+page.svelte.
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 
 ## Log In Screen
