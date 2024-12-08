@@ -1,14 +1,24 @@
 **Routes**
 **Introduction**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/introduction)]
+
 **Reactivity**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/reactivity)]
+
 **Props**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/props)]
+
 **Logic**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/logic)]
+
 **Events**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/events)]
+
 **Bindings**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/bindings)]
+
 **Lifecycle**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/lifecycle)]
+
 **Stores**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/stores)]
+
 **Motions**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/motions)]
+
 **Dogs**- [(https://my-skeleton-app-ww58.vercel.app/dog)]
+
 **Chat**- [(https://my-skeleton-app-ww58.vercel.app/chat)]
 
 
