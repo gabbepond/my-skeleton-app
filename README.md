@@ -1,7 +1,7 @@
 **FINAL PROJECT** 
 
 
-**BY:GABBE POND**
+**BY: GABBE POND**
 
 
 
