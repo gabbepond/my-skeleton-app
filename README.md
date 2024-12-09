@@ -24,6 +24,49 @@
 
 
 
+**Components**
+
+- **AuthButton.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/AuthButton.svelte)]
+
+
+  - **Bat.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Bat.svelte)]
+ 
+
+  - **BigBlueButton.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/BigBlueButton.svelte)]
+ 
+
+ - **Decrementer.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Decrementer.svelte)]
+
+   
+- **Dodger.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Dodger.svelte)]
+
+
+- **Incrementer.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Incrementer.svelte)]
+
+
+- **InsecureQuestions.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/InsecureQuestions.svelte)]
+
+
+- **Messenger.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Messenger.svelte)]
+
+
+- **Nested.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Nested.svelte]
+
+
+  - **Outer.sveltee** [(hhttps://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Outer.svelte)]
+
+
+ 
+- **Resetter.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Resetter.svelte)]
+
+
+- **ThemeMenu.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/ThemeMenu.svelte)]
+
+
+- **Thing.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Thing.svelte)]
+
+
+
 **Insecure Questions component**: [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/bindings/%2Bpage.svelte)]
 src/routes/tutorial/bindings/+page.svelte.
 - This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
