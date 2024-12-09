@@ -145,7 +145,7 @@
 
 <style lang="postcss">
 	.assistant-chat {
-		@apply bg-gray-200 text-gray-800 rounded-lg p-2;
+		@apply bg-gray-200 text-gray-800 rounded-lg p-4 w-auto;
 	}
 
 	.user-chat {
