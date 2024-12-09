@@ -1,5 +1,7 @@
 **FINAL PROJECT** 
 
+**💀 Enjoy my Skeleton Svelte Training App 💀**
+
 
 **BY: GABBE POND**
 
