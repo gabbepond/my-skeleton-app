@@ -53,7 +53,8 @@
 - **Nested.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Nested.svelte]
 
 
-  - **Outer.sveltee** [(hhttps://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Outer.svelte)]
+
+- **Outer.sveltee** [(hhttps://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Outer.svelte)]
 
 
  
