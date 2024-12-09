@@ -24,7 +24,7 @@
 
 **Props**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/props)]
 [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/props/%2Bpage.svelte)]
-- This page is where I created a bat component, and it explains the Props.
+- This page is where I created a bat component and Nested.svelte, and it explains the Props.
 
 **Logic**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/logic)]
 [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/logic/%2Bpage.svelte)]
