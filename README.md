@@ -1,88 +1,125 @@
+**FINAL PROJECT** 
 
-**Insecure Questions component**: [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/bindings/%2Bpage.svelte)]
-src/routes/tutorial/bindings/+page.svelte.
-- This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
-- I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
-- What is your favorite MLB Baseball team?
+**💀 Enjoy my Skeleton Svelte Training App 💀**
 
 
-**Lifecycle Component**
+**BY: GABBE POND**
+
+
+
+
+
+**Routes**
+
+**Introduction**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/introduction)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/introduction/%2Bpage.svelte)]
+- I used some awesome components on this page Nested.svelte. The Variable myName is defined as an HTML string with an emoji that is wrapped by the name (🥎 Gabbe 🥎).
+- The variable's answer and message are exported, meaning they can be passed as props from a parent component.
+    - answer is initialized with the value '42'.
+    - message is initialized with 'Lets Play Ball!'.
+
+**Reactivity**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/reactivity)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/reactivity/%2Bpage.svelte)]
+- I created an awesome count feature, and when you click on "CLICKED TIMES," it will pop up with a warning on the screen that can't go past 10. I also added random math quotes, and that changed every 5 sec.
+
+**Props**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/props)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/props/%2Bpage.svelte)]
+- This page is where I created a bat component and Nested.svelte, and it explains the Props.
+
+**Logic**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/logic)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/logic/%2Bpage.svelte)]
+- I created a remove button, and an Add button will appear when the list is cleared.
+
+**Events**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/events)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/events/%2Bpage.svelte)]
+- I created a move Cursor, and a hand pops up in the box.
+
+**Bindings**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/bindings)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/bindings/%2Bpage.svelte)]
+-Create a form page where you can answer some questions about fantasy baseball. ⚾
+
+**Lifecycle**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/lifecycle)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte)]
+[(https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/tutorial/lifecycle)]
 - I created an awesome Star Wars Characters page. Linked below.
-  (([https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte](https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/lifecycle/%2Bpage.svelte)))]
 
+**Stores**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/stores)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte)]
+- Has a feature that counts softball emojis when you click add or subtract.
 
-
- 
- **Stores Component**
- (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte))
-  - Has a feature that counts softball emojis when you click add or subtract.
-
-
-  **Motions**
+**Motions**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/motions)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte)]
  -   (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))
  -   I created Motions, Transitions, and Animations.
  -   I have a Progress Bar that will create Motion when the button is clicked on 0 and 25
  -   My Animations can be turned ON and OFF with the VISIBLE Button. I created these Transitions: Fade, Fly, and Spring/Transform.
  -   On my shuffleboard, I created emojis to SHUFFLE when clicked!
 
-  
-  
+**Dogs**- [(https://my-skeleton-app-ww58.vercel.app/dog)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/dog/%2Bpage.svelte)}
+[(https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/dog/%5Bname%5D)]
+- I created an awesome API page that displays all Breeds, and when I open up a breed, it just sorts by that breed and gives a dog a random name.
 
-# create-svelte
+**Chat**- [(https://my-skeleton-app-ww58.vercel.app/chat)]
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/chat/%2Bpage.svelte)]
+- I added an awesome chatbot that will answer and teach you anything about programming languages and how they work.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+**Components**
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- **AuthButton.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/AuthButton.svelte)]
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- **Bat.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Bat.svelte)]
+ 
 
-```bash
-npm run dev
+- **BigBlueButton.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/BigBlueButton.svelte)]
+ 
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+ - **Decrementer.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Decrementer.svelte)]
 
-## Building
+   
+- **Dodger.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Dodger.svelte)]
 
-To create a production version of your app:
 
-```bash
-npm run build
-```
+- **Incrementer.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Incrementer.svelte)]
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- **InsecureQuestions.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/InsecureQuestions.svelte)]
+
+   - This is where you can find the code for my Insecure Questions component. I will be using this component            in my SvelteKit app.
+   - I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
+   - What is your favorite MLB Baseball team?
+
+
+
+- **Messenger.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Messenger.svelte)]
+
+
+- **Nested.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Nested.svelte]
+
+
+
+- **Outer.sveltee** [(hhttps://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Outer.svelte)]
+
+
+ 
+- **Resetter.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Resetter.svelte)]
+
+
+- **ThemeMenu.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/ThemeMenu.svelte)]
+
+
+- **Thing.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Thing.svelte)]
+
+
 
 
 ## Log In Screen
-[https://my-skeleton-1maltn1ms-gabbe-ponds-projects.vercel.app/](https://my-skeleton-app-ww58.vercel.app/)
-I created an awesome login screen.
-
-## Dogs
-I created an awesome API page of Dog images, Breed, Name, and URLs.
-[https://my-skeleton-app-ww58.vercel.app/pokemon]
-
- ## CHAT
- I added an awesome chatbot that will answer and teach you anything about programming languages and how they work.
-[https://my-skeleton-app-ww58.vercel.app/chat]
+[(https://my-skeleton-app-ww58.vercel.app/)]
 
 
-[https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/chat/%2Bpage.svelte]
-
-
-
-
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/api/auth/%5B...kindeAuth%5D/%2Bserver.ts)]
+- I created an awesome login screen but only logged in using Github.
