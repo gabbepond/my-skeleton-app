@@ -29,10 +29,10 @@
 - **AuthButton.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/AuthButton.svelte)]
 
 
-  - **Bat.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Bat.svelte)]
+- **Bat.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Bat.svelte)]
  
 
-  - **BigBlueButton.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/BigBlueButton.svelte)]
+- **BigBlueButton.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/BigBlueButton.svelte)]
  
 
  - **Decrementer.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/Decrementer.svelte)]
