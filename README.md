@@ -20,7 +20,7 @@
 
 **Reactivity**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/reactivity)]
 [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/reactivity/%2Bpage.svelte)]
-- I created an awesome county feature, and when you click on "CLICKED TIMES," it will pop up with a warning on the screen that can't go past 10. I also added random math quotes, and that changed every 5 sec.
+- I created an awesome count feature, and when you click on "CLICKED TIMES," it will pop up with a warning on the screen that can't go past 10. I also added random math quotes, and that changed every 5 sec.
 
 **Props**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/props)]
 [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/props/%2Bpage.svelte)]
