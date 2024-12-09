@@ -8,6 +8,15 @@
 
 
 
+## Log In Screen
+[(https://my-skeleton-app-ww58.vercel.app/)]
+
+
+[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/api/auth/%5B...kindeAuth%5D/%2Bserver.ts)]
+- I created an awesome login screen but only logged in using Github.
+
+
+
 
 **Routes**
 
@@ -117,9 +126,4 @@
 
 
 
-## Log In Screen
-[(https://my-skeleton-app-ww58.vercel.app/)]
 
-
-[(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/api/auth/%5B...kindeAuth%5D/%2Bserver.ts)]
-- I created an awesome login screen but only logged in using Github.
