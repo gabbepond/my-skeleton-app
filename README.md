@@ -14,7 +14,7 @@
 **Introduction**- [(https://my-skeleton-app-ww58.vercel.app/tutorial/introduction)]
 [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/introduction/%2Bpage.svelte)]
 - I used some awesome components on this page Nested.svelte. The Variable myName is defined as an HTML string with an emoji that is wrapped by the name (🥎 Gabbe 🥎).
-- The variables answer and message are exported, meaning they can be passed as props from a parent component.
+- The variable's answer and message are exported, meaning they can be passed as props from a parent component.
     - answer is initialized with the value '42'.
     - message is initialized with 'Lets Play Ball!'.
 
@@ -88,9 +88,10 @@
 
 
 - **InsecureQuestions.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/InsecureQuestions.svelte)]
-      - This is where you can find the code for my Insecure Questions component. I will be using this component            in my SvelteKit app.
-    - I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
-    - What is your favorite MLB Baseball team?
+
+   - This is where you can find the code for my Insecure Questions component. I will be using this component            in my SvelteKit app.
+   - I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
+   - What is your favorite MLB Baseball team?
 
 
 
