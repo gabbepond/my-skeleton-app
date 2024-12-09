@@ -88,9 +88,9 @@
 
 
 - **InsecureQuestions.svelte** [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/lib/components/InsecureQuestions.svelte)]
-- This is where you can find the code for my Insecure Questions component. I will be using this component in my SvelteKit app.
-- I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
-- What is your favorite MLB Baseball team?
+      - This is where you can find the code for my Insecure Questions component. I will be using this component            in my SvelteKit app.
+    - I also created an Awesome Fanasty Baseball Page for the LA Dodgers MLB Baseball.
+    - What is your favorite MLB Baseball team?
 
 
 
