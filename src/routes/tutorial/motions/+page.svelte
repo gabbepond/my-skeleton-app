@@ -39,7 +39,7 @@
 	}
 </script>
 
-<h2 class="text-center text-lg text-cyan-300 mt-4">The Likehood of adopting a Dog 🐶</h2>
+<h2 class="text-center text-lg text-cyan-300 mt-4">The Likelihood of adopting a Dog 🐶</h2>
 
 <div class="flex flex-col gap-16 m-10">
 	<div>
