@@ -54,22 +54,22 @@
 (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/stores/%2Bpage.svelte)
 - Has a feature that counts softball emojis when you click add or subtract.
 
-**Motions**- (https://my-skeleton-app-ww58.vercel.app/tutorial/motions)
+**Motions**- (https://my-skeleton-app-ww58.vercel.app/tutorial/motions) 🐶
 (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte)
  -   (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/tutorial/motions/%2Bpage.svelte))
  -   I created Motions, Transitions, and Animations.
- -   I have a Progress Bar that will create Motion when the button is clicked on 0 and 25
- -   My Animations can be turned ON and OFF with the VISIBLE Button. I created these Transitions: Fade, Fly, and Spring/Transform.
+ -   I have a Progress Bar that will create Motion when the button is clicked on 0, 25, 50, and 100. The question is The Likelihood of adopting a Dog 🐶?
+ -   My Animations can be turned ON and OFF with the VISIBLE Button. I created these Transitions: Fade, Fly, and Spring/Transform with pictures of my Dog Dodger. 🐶
  -   On my shuffleboard, I created emojis to SHUFFLE when clicked!
 
-**Dogs**- (https://my-skeleton-app-ww58.vercel.app/dog)
+**Dogs**- (https://my-skeleton-app-ww58.vercel.app/dog) 🐶
 (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/dog/%2Bpage.svelte)
 (https://github.com/gabbepond/my-skeleton-app/tree/master/src/routes/dog/%5Bname%5D)
-- I created an awesome API page that displays all Breeds, and when I open up a breed, it just sorts by that breed and gives a dog a random name.
+- I created an awesome API page that displays all Breeds, and when I open up a breed, it just sorts by that breed and gives a dog a random name. 🐶
 
-**Chat**- (https://my-skeleton-app-ww58.vercel.app/chat)
+**Chat**- (https://my-skeleton-app-ww58.vercel.app/chat) 🤖
 (https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/chat/%2Bpage.svelte)
-- I added an awesome chatbot that will answer and teach you anything about programming languages and how they work.
+- I added an awesome chatbot that will answer and teach you anything about programming languages and how they work. Name of my Chat Bot "Gabbe GOO Chat Bot". 🤖
 
 
 
