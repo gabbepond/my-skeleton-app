@@ -9,7 +9,7 @@
 
 
 ## Log In Screen
-[(https://my-skeleton-app-ww58.vercel.app/)]
+(https://my-skeleton-app-ww58.vercel.app/)
 
 
 [(https://github.com/gabbepond/my-skeleton-app/blob/master/src/routes/api/auth/%5B...kindeAuth%5D/%2Bserver.ts)]
